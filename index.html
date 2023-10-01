@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="custom.css">
+</head>
+<body>
+    <div class="absolute -z-50 w-screen h-screen bg-gradient-to-r from-cyan-500 to-blue-500" id="ab-background"></div>
+    <!--Navbar-->
+    <nav id="navbar" class="navbar">
+        <p>Introduce myself</p>
+    </nav>
+    
+    <div id="empty" class="no-empty"></div>
+
+    <div id="intro" class="active">
+        <div id="intro-text" class="flex flex-col items-center justify-center h-full">
+            <div class="py-3 px-10 rounded-lg bg-white drop-shadow-md text-center">
+                <h1 id="pulse-h1" class="font-bold animate-pulse">20118</h1>
+                <p>[ Tar ]</p>
+            </div>
+        </div>
+    </div>
+
+    <!--Content Here-->
+    <div id="introduce" class="w-screen bg-white hidden">
+        <section class="p-6"></section>
+        <iframe id="video" class="mx-auto rounded-lg" src="https://www.youtube.com/embed/_MInXv9PBuQ?si=Df6jDF-RFXwTg2Ez" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+    </div>
+    <div id="container" class="w-screen hidden bg-white">
+        <section class="p-10"></section>
+        <div class="container mx-auto">
+            <div class="drop-shadow-lg w-fit rounded-2xl mx-auto flex flex-col items-center bg-slate-300 overflow-hidden" id="card">
+                <div id="card-bg" class="w-full h-40 flex justify-center items-center">
+                    <img src="img/pg_me.JPEG" alt="Me" class="rounded-full w-20 h-20">
+                </div>
+                <div class="p-8">
+                    <p class="font-bold">ID : 6604062620123</p>
+                    <p class="font-bold">ธนาพิพัฒน์ ศรีชัยกัณฑ์</p>
+                </div>
+            </div>
+
+            <div id="about-me" class="w-full mt-8">
+                <div class="pt-3 text-left w-11/12 mx-auto z-50" id="sticky-topic">
+                    <p class="text-4xl font-bold">About me</p>
+                    <p class="text-2xl font-bold">เกี่ยวกับฉัน</p>
+                </div>
+
+                <div id="about-me-content" class="mt-8 text-center">
+                    <ul class="list-none flex flex-col items-center">
+                        <li class="my-3"> <p class="font-bold">ชื่อ-นามสกุล</p> <p>นาย ธนาพิพัฒน์ ศรีชัยกัณฑ์</p> </li>
+                        <li class="my-3"> <p class="font-bold">วัน / เดือน / ปีเกิด</p> <p>19 มกราคม 2548</p> </li>
+                        <li class="my-3"> <p class="font-bold">สัญชาติ</p> <p>ไทย</p> </li>
+                        <li class="my-3"> <p class="font-bold">น้ำหนัก</p> <p>75 กก.</p> <p class="font-bold">ส่วนสูง</p> <p>170 ซม.</p> </li>
+                        <li class="my-3"> <p class="font-bold">กรุ๊ปเลือด</p> <p>B</p> </li>
+                    </ul>
+                    <p class="font-bold">Hobby</p>
+                    <p>ถ่ายภาพ, เรียนรู้การลงทุน, การ์ดเกม&บอร์ดเกม</p>
+                </div>
+            </div>
+
+            <div id="about-me" class="w-full mt-8">
+                <div class="mt-8 pt-3 text-left w-11/12 mx-auto z-50" id="sticky-topic">
+                    <p class="text-4xl font-bold">About me</p>
+                    <p class="text-2xl font-bold">ที่อยู่</p>
+                </div>
+
+                <div id="about-me-address" class="mt-8 text-center">
+                    <div id="map-box" class="overflow-hidden w-1/2 drop-shadow rounded-lg mx-auto">
+                        <a href="https://www.google.co.th/maps/place/018+%E0%B8%99%E0%B8%B2%E0%B8%A2%E0%B8%98%E0%B8%99%E0%B8%B2%E0%B8%9E%E0%B8%B4%E0%B8%9E%E0%B8%B1%E0%B8%92%E0%B8%99%E0%B9%8C+%E0%B8%A8%E0%B8%A3%E0%B8%B5%E0%B8%8A%E0%B8%B1%E0%B8%A2%E0%B8%81%E0%B8%B1%E0%B8%93%E0%B8%91%E0%B9%8C/@18.640071,99.0067838,18.25z/data=!4m9!1m2!2m1!1z4Lib4LmI4Liy4LmB4LiC4LihIOC4peC4s-C4nuC4ueC4mQ!3m5!1s0x30da337563349fa1:0x7b622005f3625f2!8m2!3d18.6399954!4d99.0068421!16s%2Fg%2F11nwwxh3w6?hl=th&entry=ttu">
+                            <img src="img/map.png" alt="Address" id="map" class="w-full">
+                        </a>
+                    </div>
+                    <div class="mt-4">
+                        <p class="font-bold text-xl">ร้านขายของประจำหมู่บ้าน "ร้านธนาการค้า"</p>
+                        <p class="text-lg">บ่านเลขที่ 86 หมู่ 7 ตำบล เหมืองง่า อำเภอ เมือง จังหวัด ลำพูน 51120</p>
+                    </div>
+                </div>
+            </div>
+
+            <div id="about-me" class="w-full mt-8">
+                <div id="about-me-goal">
+                    <div class="mt-8 pt-3 text-left w-11/12 mx-auto z-50" id="sticky-topic">
+                        <p class="text-4xl font-bold">About me</p>
+                        <p class="text-2xl font-bold">เป้าหมายในอนาคต</p>
+                    </div>
+                    <div class="w-10/12 mx-auto mt-4">
+                        <p class="my-goal">คอมพิวเตอร์คืออุปกรณ์ที่ข้าพเจ้าได้มีโอกาสได้ใช้งานตั้งแต่วัยเด็ก ข้าพเจ้าได้ใช้เพื่อความบันเทิงทั้งการดูวิดีโอ หรือการเล่นเกม ข้าพเจ้ามีความผูกพันธ์กับการใช้คอมพิวเตอร์เป็นอย่างมาก เมื่อมีอายุที่มากขึ้นข้าพเจ้าได้ใช้คอมพิวเตอร์เพื่อหาความรู้ต่างๆ จนเกิดความสนใจ และมีเป้าหมายที่อยากเรียนในระดับมหาลัยเกี่ยวกับวิชาคอมพิวเตอร์ ในวัยมัธยมข้าพเจ้าเริ่มศึกษาเกี่ยวกับการสร้างแอปพลิเคชัน และปัญญาประดิษฐ์(AI) รวมถึงได้ทดลองทำโปรเจคต่างๆและส่งประกวด ข้าพเจ้ารู้สึกมีความสุขแะสนุกกับการสร้างสรรค์งานของข้าพเจ้ามาก ในอนาคตข้าพเจ้าจะต่อยอดความสนใจเรื่อง แอปพลิเคชันและปัญญาประดิษฐ์ เพื่อนำไปต่อยอดในงานที่ทำ หรือการนำไปพัฒนาเป็นธุรกิจของตัวข้าพเจ้าเอง ให้ประสบความสำเร็จ.</p>
+                    </div>
+                </div>
+            </div>
+
+
+            <div id="education" class="mt-8 flex flex-col justify-center items-center">
+                <div class="my-8 pt-3 text-left w-11/12 mx-auto z-50" id="sticky-topic">
+                    <p class="text-4xl font-bold">Education</p>
+                    <p class="text-2xl font-bold">ประวัติการศึกษา</p>
+                </div>
+                <!--Deknoy school-->
+                <div id="elementary" class="w-2/3 flex p-3 border border-lime-600 rounded-xl mb-6">
+                    <img src="img/al.png" alt="elementary" class="md:w-40 md:h-40 h-20 w-20">
+                    <div class="m-auto text-center">
+                        <p class="text-xl font-bold">โรงเรียนอนุบาลลำพูน</p>
+                        <p>2011 - 2017</p>
+                    </div>
+                </div>
+                <!--High school-->
+                <div id="primary" class="w-2/3 flex p-3 border border-lime-600 rounded-xl mb-6">
+                    <img src="img/sby.png" alt="elementary" class="md:w-40 md:h-40 h-20 w-20">
+                    <div class="m-auto text-center">
+                        <p class="text-xl font-bold">โรงเรียนส่วนบุญโญปถัมภ์ ลำพูน</p>
+                        <p>2017 - 2023</p>
+                    </div>
+                </div>
+                <!--University-->
+                <div id="university" class="w-2/3 flex p-3 border border-lime-600 rounded-xl mb-6">
+                    <img src="img/kmutnb.jpg" alt="university" class="md:w-40 md:h-40 h-20 w-20">
+                    <div class="m-auto text-center">
+                        <p class="text-xl font-bold">KMUTNB</p>
+                        <p>2023 - ปัจจุบัน</p>
+                    </div>
+                </div>
+            </div>
+            <div>
+                <div class="my-8 pt-3 text-left w-11/12 mx-auto z-50" id="sticky-topic">
+                    <p class="text-4xl font-bold">Scientific articles</p>
+                    <p class="text-2xl font-bold">บทความทางวิทยาศาสตร์</p>
+                </div>
+                <div class="w-10/12 mx-auto mt-4">
+                    <p class="SA">รายวิชาชีววิทยาเป็นรายวิชาที่ศึกษาธรรมชาติและสิ่งมีชีวิตองค์ความรู้มีรายละเอียดมากมายมีความซับซ้อนและเนื้อหาที่เน้นการจำ รายละเอียดเนื้อหาที่มากมายทำให้ ยากต่อการจดจาของผู้เรียน และครูผู้สอน จำเป็นต้องออกแบบเพื่อให้ นักเรียนสามารถเกิดการเรียนรู้ผ่านนกระบวนการปฏิบัติ จากปัญหาดังกล่าวคณะ ผู้จัดทำจึงมีวัตถุประสงค์เพื่อสร้างเกมตอบปัญหาชีววิทยา BIOGAN ด้วยปัญญาประดิษฐ์ (AI) และทดสอบ ประสิทธิภาพการทางานของระบบประมวลผลปัญญาประดิษฐ์ ในการจำแนกโมเดลแบบจาลอง ทั้งนี้ได้ทำการสำรวจความพึงพอใจของผู้ใช้งานเกมตอบปัญหาชีววิทยา BIOGAN ด้วยปัญญาประดิษฐ์ โดยทดสอบ ประสิทธิภาพความแม่นยาของ AI จากการถ่ายรูปอวัยวะจำลอง และให้ AI ประมวลผลออกมาเป็น ค่าร้อยละ รายวิชาชีววิทยาเป็นรายวิชาที่ศึกษาธรรมชาติและสิ่งมีชีวิตองค์ความรู้มีรายละเอียดมากมายมีความซับซ้อนและเนื้อหาที่เน้นการกจำ รายละเอียดเนื้อหาที่มากมายทำให้ ยากต่อการจดจาของผู้เรียน และครูผู้สอน จำเป็นต้องออกแบบเพื่อให้ นักเรียนสามารถเกิดการเรียนรู้ผ่านนกระบวนการปฏิบัติ จากปัญหาดังกล่าวคณะ ผู้จัดทำจึงมีวัตถุประสงค์เพื่อสร้างเกมตอบปัญหาชีววิทยา BIOGAN ด้วยปัญญาประดิษฐ์ (AI) และทดสอบ ประสิทธิภาพการทางานของระบบประมวลผลปัญญาประดิษฐ์ ในการจำแนกโมเดลแบบจาลอง ทั้งนี้ได้ทำการสำรวจความพึงพอใจของผู้ใช้งานเกมตอบปัญหาชีววิทยา BIOGAN ด้วยปัญญาประดิษฐ์ โดยทดสอบ ประสิทธิภาพความแม่นยาของ AI จากการถ่ายรูปอวัยวะจำลอง และให้ AI ประมวลผลออกมาเป็น ค่าร้อยละ</p>
+                </div>
+            </div>
+
+            <div id="tools" class="mt-8 flex flex-col justify-center items-center">
+                <div class="my-8 pt-3 text-left w-11/12 mx-auto z-50" id="sticky-topic">
+                    <p class="text-4xl font-bold">Tools</p>
+                    <p class="text-2xl font-bold">เครื่องมือที่ใช้</p>
+                </div>
+
+                <div class="justify-self-center self-center sm:grid sm:grid-cols-2 sm:gap-8 w-10/12">
+                    <div id="vs" class="my-6 mx-auto overflow-hidden rounded-xl drop-shadow-xl w-60 h-80 border-4 border-slate-700 bg-slate-700">
+                        <div id="vs-img" class="rounded-xl bg-white flex justify-center items-center">
+                            <img src="img/appdev.png" alt="VS_code">
+                        </div>
+                        <p class="text-white bold p-3">ใช้ในการโค้ดดิ้งสร้างเว็ปเพจด้วย HTML และตบแต่งเพิ่มความสวยงามด้วย JS,CSS,Tailwindcss</p>
+                    </div>
+                    <div id="capcut" class="my-6 mx-auto overflow-hidden rounded-xl drop-shadow-xl w-60 h-80 border-4 border-slate-700 bg-slate-700">
+                        <div id="capcut-img" class="rounded-xl bg-white flex justify-center items-center">
+                            <img src="img/edit.png" alt="capcut">
+                        </div>
+                        <p class="text-white bold p-3">การตัดคลิปวิดีโออย่างง่าย สำหรับการแนะนำตัวเพื่อเพิ่มความหน้าสนใจของเว็ปไซต์</p>
+                    </div>
+                </div>
+            </div>
+
+            <div id="Mypics" class="mt-8">
+                <div class="my-8 pt-3 text-left w-11/12 mx-auto z-50" id="sticky-topic">
+                    <p class="text-4xl font-bold">My pics</p>
+                    <p class="text-2xl font-bold">รูปภาพเพิ่มเติม</p>
+                </div>
+
+                <div class="mx-auto w-10/12 justify-self-center justify-center self-center grid gap-8 grid-cols-1 sm:grid-cols-2 md:grid-cols-3">
+                    <img src="img/pg_1.jpg" alt="1" class="mx-auto w-40 h-40 sm:w-48 sm:h-48 rounded-xl object-cover">
+                    <img src="img/pg_2.jpg" alt="2" class="mx-auto w-40 h-40 sm:w-48 sm:h-48 rounded-xl object-cover">
+                    <img src="img/pg_bg.JPG" alt="3" class="mx-auto w-40 h-40 sm:w-48 sm:h-48 rounded-xl object-cover">
+                    <img src="img/pg_kid.jpg" alt="4" class="mx-auto w-40 h-40 sm:w-48 sm:h-48 rounded-xl object-cover">
+                    <img src="img/pg_bg2.JPG" alt="5" class="mx-auto w-40 h-40 sm:w-48 sm:h-48 rounded-xl object-cover">
+                    <img src="img/pg_profile.jpg" alt="6" class="mx-auto w-40 h-40 sm:w-48 sm:h-48 rounded-xl object-cover">
+                    <img src="img/pg_body_back.jpg" alt="7" class="mx-auto w-40 h-40 sm:w-48 sm:h-48 rounded-xl object-cover">
+                </div>
+            </div>
+
+        </div>
+        <section class="h-20"></section>
+        <div id="footer" class="h-20 w-screen bg-slate-700 text-center flex justify-center items-center">
+            <p class="text-white">Copyright 2023. Made by THANAPHIPAT</p>
+        </div>
+    </div>
+    
+
+    <script src="script.js"></script>
+</body>
+</html>
