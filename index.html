@@ -9,12 +9,6 @@
 </head>
 <body>
     <div class="absolute -z-50 w-screen h-screen bg-gradient-to-r from-cyan-500 to-blue-500" id="ab-background"></div>
-    <!--Navbar-->
-    <nav id="navbar" class="navbar">
-        <p>Introduce myself</p>
-    </nav>
-    
-    <div id="empty" class="no-empty"></div>
 
     <div id="intro" class="active">
         <div id="intro-text" class="flex flex-col items-center justify-center h-full">
@@ -33,13 +27,16 @@
     <div id="container" class="w-screen hidden bg-white">
         <section class="p-10"></section>
         <div class="container mx-auto">
-            <div class="drop-shadow-lg w-fit rounded-2xl mx-auto flex flex-col items-center bg-slate-300 overflow-hidden" id="card">
-                <div id="card-bg" class="w-full h-40 flex justify-center items-center">
-                    <img src="img/pg_me.JPEG" alt="Me" class="rounded-full w-20 h-20">
-                </div>
-                <div class="p-8">
-                    <p class="font-bold">ID : 6604062620123</p>
-                    <p class="font-bold">ธนาพิพัฒน์ ศรีชัยกัณฑ์</p>
+
+            <div id="card-bg" class="w-full py-8 bg-cover bg-center rounded-md">
+                <div class="drop-shadow-lg w-fit rounded-2xl mx-auto flex flex-col items-center bg-slate-300 overflow-hidden" id="card">
+                    <div class="bg-white w-full h-80 flex justify-center items-center">
+                        <img src="img/pg_me.JPEG" alt="Me" class="rounded-full w-60 h-60 mx-4">
+                    </div>
+                    <div class="p-8">
+                        <p class="font-bold">ID : 6604062620123</p>
+                        <p class="font-bold">ธนาพิพัฒน์ ศรีชัยกัณฑ์</p>
+                    </div>
                 </div>
             </div>
 
@@ -50,13 +47,21 @@
                 </div>
 
                 <div id="about-me-content" class="mt-8 text-center">
-                    <ul class="list-none flex flex-col items-center">
-                        <li class="my-3"> <p class="font-bold">ชื่อ-นามสกุล</p> <p>นาย ธนาพิพัฒน์ ศรีชัยกัณฑ์</p> </li>
-                        <li class="my-3"> <p class="font-bold">วัน / เดือน / ปีเกิด</p> <p>19 มกราคม 2548</p> </li>
-                        <li class="my-3"> <p class="font-bold">สัญชาติ</p> <p>ไทย</p> </li>
-                        <li class="my-3"> <p class="font-bold">น้ำหนัก</p> <p>75 กก.</p> <p class="font-bold">ส่วนสูง</p> <p>170 ซม.</p> </li>
-                        <li class="my-3"> <p class="font-bold">กรุ๊ปเลือด</p> <p>B</p> </li>
-                    </ul>
+                    <div id="face-pg" class="my-3 mx-auto flex justify-center items-center">
+                        <img src="img/pg_kid.jpg" alt="me_1" class="object-cover w-40 h-24 lg:w-60 lg:h-32 rounded-xl">
+                    </div>
+                    <div class="list-none grid grid-cols-2 md:w-3/5 mx-auto">
+                        <div>
+                            <div class="my-3"> <p class="font-bold">ชื่อ-นามสกุล</p> <p>นาย ธนาพิพัฒน์ ศรีชัยกัณฑ์</p> </div>
+                            <div class="my-3"> <p class="font-bold">วัน / เดือน / ปีเกิด</p> <p>19 มกราคม 2548</p> </div>
+                            <div class="my-3"> <p class="font-bold">สัญชาติ</p> <p>ไทย</p> </div>
+                        </div>
+                        <div>
+                            <div class="my-3"> <p class="font-bold">น้ำหนัก</p> <p>75 กก.</p></div>
+                            <div class="my-3"> <p class="font-bold">ส่วนสูง</p> <p>170 ซม.</p> </div>
+                            <div class="my-3"> <p class="font-bold">กรุ๊ปเลือด</p> <p>B</p> </div>
+                        </div> 
+                    </div>
                     <p class="font-bold">Hobby</p>
                     <p>ถ่ายภาพ, เรียนรู้การลงทุน, การ์ดเกม&บอร์ดเกม</p>
                 </div>
@@ -87,8 +92,20 @@
                         <p class="text-4xl font-bold">About me</p>
                         <p class="text-2xl font-bold">เป้าหมายในอนาคต</p>
                     </div>
+                    
                     <div class="w-10/12 mx-auto mt-4">
-                        <p class="my-goal">คอมพิวเตอร์คืออุปกรณ์ที่ข้าพเจ้าได้มีโอกาสได้ใช้งานตั้งแต่วัยเด็ก ข้าพเจ้าได้ใช้เพื่อความบันเทิงทั้งการดูวิดีโอ หรือการเล่นเกม ข้าพเจ้ามีความผูกพันธ์กับการใช้คอมพิวเตอร์เป็นอย่างมาก เมื่อมีอายุที่มากขึ้นข้าพเจ้าได้ใช้คอมพิวเตอร์เพื่อหาความรู้ต่างๆ จนเกิดความสนใจ และมีเป้าหมายที่อยากเรียนในระดับมหาลัยเกี่ยวกับวิชาคอมพิวเตอร์ ในวัยมัธยมข้าพเจ้าเริ่มศึกษาเกี่ยวกับการสร้างแอปพลิเคชัน และปัญญาประดิษฐ์(AI) รวมถึงได้ทดลองทำโปรเจคต่างๆและส่งประกวด ข้าพเจ้ารู้สึกมีความสุขแะสนุกกับการสร้างสรรค์งานของข้าพเจ้ามาก ในอนาคตข้าพเจ้าจะต่อยอดความสนใจเรื่อง แอปพลิเคชันและปัญญาประดิษฐ์ เพื่อนำไปต่อยอดในงานที่ทำ หรือการนำไปพัฒนาเป็นธุรกิจของตัวข้าพเจ้าเอง ให้ประสบความสำเร็จ.</p>
+                        <div class="grid place-items-center grid-cols-1 md:grid-cols-2 gap-4">
+                            <img src="img/pg_2.jpg" alt="Me_adult" class="object-cover w-40 h-40 lg:w-60 lg:h-60 rounded-full">
+                            <div class="m-auto">
+                                <img src="img/text-start.png" alt="text-start" class="w-3 h-3 mx-auto">
+                                <p class="py-3">เพราะเรารู้จักคำว่าเริ่ม เราจึงเข้าใกล้คำว่าสำเร็จ</p>
+                                <img src="img/text-end.png" alt="text-end" class="w-3 h-3 mx-auto">
+                            </div>
+                            
+                        </div>
+                        <div class="flex">
+                            <p class="my-goal mt-8"><b>"</b> คอมพิวเตอร์คืออุปกรณ์ที่ข้าพเจ้าได้มีโอกาสได้ใช้งานตั้งแต่วัยเด็ก ข้าพเจ้าได้ใช้เพื่อความบันเทิงทั้งการดูวิดีโอ หรือการเล่นเกม ข้าพเจ้ามีความผูกพันธ์กับการใช้คอมพิวเตอร์เป็นอย่างมาก เมื่อมีอายุที่มากขึ้นข้าพเจ้าได้ใช้คอมพิวเตอร์เพื่อหาความรู้ต่างๆ จนเกิดความสนใจ และมีเป้าหมายที่อยากเรียนในระดับมหาลัยเกี่ยวกับวิชาคอมพิวเตอร์ ในวัยมัธยมข้าพเจ้าเริ่มศึกษาเกี่ยวกับการสร้างแอปพลิเคชัน และปัญญาประดิษฐ์(AI) รวมถึงได้ทดลองทำโปรเจคต่างๆและส่งประกวด ข้าพเจ้ารู้สึกมีความสุขแะสนุกกับการสร้างสรรค์งานของข้าพเจ้ามาก ในอนาคตข้าพเจ้าจะต่อยอดความสนใจเรื่อง แอปพลิเคชันและปัญญาประดิษฐ์ เพื่อนำไปต่อยอดในงานที่ทำ หรือการนำไปพัฒนาเป็นธุรกิจของตัวข้าพเจ้าเอง ให้ประสบความสำเร็จ <b>"</b></p>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -100,7 +117,7 @@
                     <p class="text-2xl font-bold">ประวัติการศึกษา</p>
                 </div>
                 <!--Deknoy school-->
-                <div id="elementary" class="w-2/3 flex p-3 border border-lime-600 rounded-xl mb-6">
+                <div id="elementary" class="w-2/3 flex p-3 border border-black rounded-xl mb-6">
                     <img src="img/al.png" alt="elementary" class="md:w-40 md:h-40 h-20 w-20">
                     <div class="m-auto text-center">
                         <p class="text-xl font-bold">โรงเรียนอนุบาลลำพูน</p>
@@ -108,7 +125,7 @@
                     </div>
                 </div>
                 <!--High school-->
-                <div id="primary" class="w-2/3 flex p-3 border border-lime-600 rounded-xl mb-6">
+                <div id="primary" class="w-2/3 flex p-3 border border-black rounded-xl mb-6">
                     <img src="img/sby.png" alt="elementary" class="md:w-40 md:h-40 h-20 w-20">
                     <div class="m-auto text-center">
                         <p class="text-xl font-bold">โรงเรียนส่วนบุญโญปถัมภ์ ลำพูน</p>
@@ -116,7 +133,7 @@
                     </div>
                 </div>
                 <!--University-->
-                <div id="university" class="w-2/3 flex p-3 border border-lime-600 rounded-xl mb-6">
+                <div id="university" class="w-2/3 flex p-3 border border-black rounded-xl mb-6">
                     <img src="img/kmutnb.jpg" alt="university" class="md:w-40 md:h-40 h-20 w-20">
                     <div class="m-auto text-center">
                         <p class="text-xl font-bold">KMUTNB</p>
@@ -156,28 +173,10 @@
                 </div>
             </div>
 
-            <div id="Mypics" class="mt-8">
-                <div class="my-8 pt-3 text-left w-11/12 mx-auto z-50" id="sticky-topic">
-                    <p class="text-4xl font-bold">My pics</p>
-                    <p class="text-2xl font-bold">รูปภาพเพิ่มเติม</p>
-                </div>
-
-                <div class="mx-auto w-10/12 justify-self-center justify-center self-center grid gap-8 grid-cols-1 sm:grid-cols-2 md:grid-cols-3">
-                    <img src="img/pg_1.jpg" alt="1" class="mx-auto w-40 h-40 sm:w-48 sm:h-48 rounded-xl object-cover">
-                    <img src="img/pg_2.jpg" alt="2" class="mx-auto w-40 h-40 sm:w-48 sm:h-48 rounded-xl object-cover">
-                    <img src="img/pg_bg.JPG" alt="3" class="mx-auto w-40 h-40 sm:w-48 sm:h-48 rounded-xl object-cover">
-                    <img src="img/pg_kid.jpg" alt="4" class="mx-auto w-40 h-40 sm:w-48 sm:h-48 rounded-xl object-cover">
-                    <img src="img/pg_bg2.JPG" alt="5" class="mx-auto w-40 h-40 sm:w-48 sm:h-48 rounded-xl object-cover">
-                    <img src="img/pg_profile.jpg" alt="6" class="mx-auto w-40 h-40 sm:w-48 sm:h-48 rounded-xl object-cover">
-                    <img src="img/pg_body_back.jpg" alt="7" class="mx-auto w-40 h-40 sm:w-48 sm:h-48 rounded-xl object-cover">
-                </div>
-            </div>
-
-        </div>
         <section class="h-20"></section>
-        <div id="footer" class="h-20 w-screen bg-slate-700 text-center flex justify-center items-center">
-            <p class="text-white">Copyright 2023. Made by THANAPHIPAT</p>
-        </div>
+    </div>
+    <div id="footer" class="h-20 w-screen bg-slate-700 text-center flex justify-center items-center hidden">
+        <p class="text-white">Copyright 2023. Made by THANAPHIPAT</p>
     </div>
     
 
